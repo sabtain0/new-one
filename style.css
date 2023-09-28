@@ -70,6 +70,9 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
 @media only screen and (max-width: 900px) {
+        .clock{
+        backdrop-filter: blur(10vw);
+    }
     body {
       background-color: lightblue;
     }
