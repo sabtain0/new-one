@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins , sans-serif
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(45deg , #0d0623 , #200b66);
+    color: white;
+    
+}
+.container{
+    width:55vw;
+    height: 26vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    box-shadow: -13px 16px 25px rgb(3, 3, 3);
+}
+.clock{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.074);
+    backdrop-filter: blur(5vw);
+    
+}
+.container::before{
+      width: 13vw;
+      height: 26vh;
+      content: "";
+      background:rgb(230, 58, 58) ;
+      position: absolute;
+      left: -10%;
+      top: -33%;
+      z-index: -1;
+      box-shadow: -19px 16px 25px rgb(3, 3, 3);
+}
+.container::after{
+      width: 15vw;
+      height: 29vh;
+      content: ""; 
+      border-radius: 50%;
+      background:rgb(58, 139, 225) ;
+      position: absolute;
+      right: -7%;
+      bottom: -39%;
+      z-index: -1;
+      box-shadow: -13px 16px 25px rgb(3, 3, 3);
+}
+.clock span{
+   font-size: 3rem;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 13px;
+}
+#ss{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 18px;
+    font-size:2.6rem ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+@media only screen and (max-width: 900px) {
+    body {
+      background-color: lightblue;
+    }
+    .clock span{
+        font-size: 2rem;
+         display: inline-block;
+         text-align: center;
+         justify-content: center;
+         position: relative;
+     }
+     .container{
+        width:70vw;
+        height: 16vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        box-shadow: -13px 16px 25px rgb(3, 3, 3);
+    }
+    .container::before{
+        width: 20vw;
+        height: 11vh;
+        content: "";
+        background:rgb(212, 60, 60) ;
+        position: absolute;
+        left: -15%;
+        top: -30%;
+        z-index: -1;
+        box-shadow: -7px 16px 25px rgb(3, 3, 3);
+  }
+  .container::after{
+        width: 21vw;
+        height: 12vh;
+        content: ""; 
+        border-radius: 50%;
+        background:rgb(78, 121, 240) ;
+        position: absolute;
+        right: -11%;
+        bottom: -35%;
+        z-index: -1;
+        box-shadow: -13px 16px 25px rgb(3, 3, 3);
+  }
+  #ss{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  }
